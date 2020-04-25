@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<!--Um pouco de CSS-->
+<style>
+    article{
+        padding: 15px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        background-color: #eee;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+<img src="logo-aqui.png" usemap="#Logo">
+<map name="Logo">
+<area alt="Sua-logo-aqui" shape="rect" href="https://www.fabricadeprogramador.com.br/" target="-blank" coords="1,1,249,195">
+</map>
+<h1>Calculadora</h1> 
+<article>
+    
+    <div><label>Número 1</label><br><input placeholder="Número 1" type="number"></div>
+    <div><label>Número 2</label><br><input placeholder="Número 2" type="number"></div>
+    
+    <input type="radio" id="soma"><label for="soma">Soma</label><br>
+    <input type="radio" id="subtracao"><label for="subtracao">Subtração</label><br>
+    <input type="radio" id="multi"><label for="multi">Multiplicação</label><br>
+    <input type="radio" id="divi"><label for="divi">Divisão</label><br>
+    <input type="button" value="Calcular">
+    <input type="number" value="value-calc">
+</article>
+</body>
+</html>
