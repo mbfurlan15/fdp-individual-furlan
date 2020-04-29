@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <script>
+        function somar (){
+        let n1 = parseFloat(document.body.children[3].children[0].children[2].value)
+        let n2 = parseFloat(document.body.children[3].children[1].children[2].value)
+            let sum = n1 + n2
+            window.alert(sum)
+            
+        }
+        function subtrair (){
+        let n1 = parseFloat(document.body.children[3].children[0].children[2].value)
+        let n2 = parseFloat(document.body.children[3].children[1].children[2].value)
+            let sum = n1 - n2
+            window.alert(sum)
+        }
+        function multiplicar (){
+        let n1 = parseFloat(document.body.children[3].children[0].children[2].value)
+        let n2 = parseFloat(document.body.children[3].children[1].children[2].value)
+            let sum = n1 * n2
+            window.alert(sum)
+        }
+        function dividir (){
+        let n1 = parseFloat(document.body.children[3].children[0].children[2].value)
+        let n2 = parseFloat(document.body.children[3].children[1].children[2].value)
+            let sum = n1 / n2
+            window.alert(sum)
+        }
+    </script>
 </head>
 <!--Um pouco de CSS-->
 <style>
@@ -23,15 +50,15 @@
 <h1>Calculadora</h1> 
 <article>
     
-    <div><label>Número 1</label><br><input placeholder="Número 1" type="number"></div>
-    <div><label>Número 2</label><br><input placeholder="Número 2" type="number"></div>
+    <div><label>Número 1</label><br><input id="campo1" placeholder="Número 1" type="number"></div>
+    <div><label>Número 2</label><br><input id="campo2" placeholder="Número 2" type="number"></div>
     
-    <input type="radio" id="soma"><label for="soma">Soma</label><br>
-    <input type="radio" id="subtracao"><label for="subtracao">Subtração</label><br>
-    <input type="radio" id="multi"><label for="multi">Multiplicação</label><br>
-    <input type="radio" id="divi"><label for="divi">Divisão</label><br>
-    <input type="button" value="Calcular">
-    <input type="number" placeholder="Resposta">
+    <input type="button" value="soma" onclick="somar ()">
+    <input type="button" value="subtração" onclick="subtrair ()">
+    <input type="button" value="multiplicação" onclick="multiplicar ()">
+    <input type="button" value="divisão" onclick="dividir ()"><br>
+    
+
 </article>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do Salário</title>
+    <script>
+        function sal(){
+            var N1 = parseFloat(campo1.value) * (1- parseFloat(campo2.value)/100)
+        
+            window.alert(N1)
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Calculadora do Salário</h1>
+    <div><input id="campo1" placeholder="Salário" type="number"></div>
+    <div><input id="campo2" placeholder="porcentagem de desconto" type="number"></div>
+    <div>
+        <button onclick="sal()">Calcular</button>
+    </div>
+</body>
+</html>
