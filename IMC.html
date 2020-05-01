@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do IMC</title>
+    <script>
+        function imc(){
+            var N1 = parseFloat(campo1.value) /((parseFloat(campo2.value)*parseFloat(campo2.value))/10000)
+            var n2 = Math.round(N1*10)/10
+            var a = "Seu IMC é de "
+            var b = a.concat(n2)
+            window.alert(b)
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Calculo do IMC</h1>
+    <div><input id="campo1" placeholder="Peso (kg)" type="number"></div>
+    <div><input id="campo2" placeholder="Altura (cm)" type="number"></div>
+    <div>
+        <button onclick="imc()">Calcular</button>
+    </div>
+</body>
+</html>

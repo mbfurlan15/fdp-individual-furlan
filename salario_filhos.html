@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo do Salário</title>
+    <script>
+        function sal(){
+            var N1 = parseFloat(campo1.value) + parseFloat(campo2.value) * parseFloat(campo1.value)*0.05
+            var n2 = N1*0.94
+            var n3 = Math.round(n2*100)/100
+            var a = "Seu salário líquido é de R$ "
+            var b = a.concat(n3)
+            window.alert(b)
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Salário</h1>
+    <div><input id="campo1" placeholder="Salário Bruto (R$)" type="number"></div>
+    <div><input id="campo2" placeholder="Número de filhos" type="number"></div>
+    <div>
+        <button onclick="sal()">Calcular</button>
+    </div>
+</body>
+</html>
