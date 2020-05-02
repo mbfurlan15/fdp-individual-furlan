@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mbfurlan15/fdp-individual-furlan/issues"
   },
-  "homepage": "https://github.com/mbfurlan15/fdp-individual-furlan#readme"
+  "homepage": "https://github.com/mbfurlan15/fdp-individual-furlan#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
