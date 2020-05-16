@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto vagas OVID-19</title>
+    <style>
+        article{
+            padding: 15px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #eee;
+            margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Hospital</h1>
+  <h2>Número de vagas</h2>
+  <article>
+    <div><label>Vagas Comuns</label><br><input id="hosp1" placeholder="Número de vagas" type="number"></div>
+    <div><label>Vagas de Campanha</label><br><input id="hosp2" placeholder="Número de vagas" type="number"></div>
+  </article>
+  <h2>Pacientes</h2>
+  <article>
+    <div><label>Nome Completo</label><br><input id="pac1"  type="string"></div>
+    <div><label>Sexo:</label><br>
+        <input type="radio" name="sexo"></input>Masculino<br>
+        <input type="radio" name="sexo"></input>Feminino<br>
+        <input type="radio" name="sexo"></input>Prefere não informar<br>
+       <!-- <input list="Sexo">
+            <datalist id="Sexo">
+            <option value="M">	Masculino	</option>
+            <option value="F">	Feminino	</option>
+            <button onclick="cads_pac">Cadastrar</button>-->
+        </div>
+        <input type="button" value="Cadastrar"></input>
+        </article>
+        <article>
+            <h3>Hospital Comum</h3>
+            <table border="1">
+                <tr><td>Nome</td><td>Sexo</td><td>Excluir</td></tr>
+                <tr><td>Joao</td><td>Masculino</td><td><button onclick="exc">Excluir</button></td></tr>
+            </table><br>
+            <h3>Hospital de Campanha</h3>
+            <table border="1">
+                <tr><td>Nome</td><td>Sexo</td><td>Excluir</td></tr>
+                <tr><td>Joao</td><td>Masculino</td><td><button onclick="exc">Excluir</button></td></tr>
+            </table><br>
+
+        </article>
+  
+</body>
+</html>
