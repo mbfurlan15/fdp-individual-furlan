@@ -13,10 +13,11 @@
         let res_a = preco_a / con_a
         let res_g = preco_g / con_g
         
-            if (res_g<res_a){
-
-                resultado = "Gasolina"
-            }else {let resultado = "Gasolina"}
+        if (res_g < res_a) {
+                resuldado.innerText = "Gasolina"
+            } else {
+                resuldado.innerText = "Alcool"
+            }
     }
 
     </script>
@@ -29,7 +30,8 @@
         <div>><input type="number" id="consumo_alcool" placeholder="Rendimento Álcool (km/l)"></div>
         <div>><input type="number" id="consumo_gasol" placeholder="Rendimento  Gasolina (km/l)"></div>
         <div><button onclick="calcular()">Calcular</button></div>
-        <div><label>Melhor opção: </label><label id="resultado"></label></div>
+        <div><label> Melhor Opção:</label>
+            <label id="resuldado"> </label></div>
 
     </div>
 </body>
