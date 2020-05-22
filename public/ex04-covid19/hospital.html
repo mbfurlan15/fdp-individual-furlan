@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto vagas OVID-19</title>
+    
+    <script src="hospital.js"> </script>
+    
+    
+    
     <style>
         article{
             padding: 15px;
@@ -19,19 +24,15 @@
   <article>
     <div><label>Vagas Comuns</label><br><input id="hosp1" placeholder="Número de vagas" type="number"></div>
     <div><label>Vagas de Campanha</label><br><input id="hosp2" placeholder="Número de vagas" type="number"></div>
-  </article>
+    <div><input type="button" value="Salvar" onclick="cadastrarHospital()"></input></div>
+</article>
   <h2>Pacientes</h2>
   <article>
     <div><label>Nome Completo</label><br><input id="pac1"  type="string"></div>
     <div><label>Sexo:</label><br>
-        <input type="radio" name="sexo"></input>Masculino<br>
-        <input type="radio" name="sexo"></input>Feminino<br>
-        <input type="radio" name="sexo"></input>Prefere não informar<br>
-       <!-- <input list="Sexo">
-            <datalist id="Sexo">
-            <option value="M">	Masculino	</option>
-            <option value="F">	Feminino	</option>
-            <button onclick="cads_pac">Cadastrar</button>-->
+        <input type="radio" name="sexo"></input>M<br>
+        <input type="radio" name="sexo"></input>F<br>
+      
         </div>
         <input type="button" value="Cadastrar"></input>
         </article>
