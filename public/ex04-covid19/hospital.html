@@ -28,13 +28,13 @@
 </article>
   <h2>Pacientes</h2>
   <article>
-    <div><label>Nome Completo</label><br><input id="pac1"  type="string"></div>
+    <div><label>Nome Completo</label><br><input id="pac"  type="string"></div>
     <div><label>Sexo:</label><br>
-        <input type="radio" name="sexo"></input>M<br>
-        <input type="radio" name="sexo"></input>F<br>
+        <input type="radio" name="sexo" id="rm" value="M"></input>M<br>
+        <input type="radio" name="sexo"id="rf" value="F"></input>F<br>
       
         </div>
-        <input type="button" value="Cadastrar"></input>
+        <input type="button" value="Adicionar" onclick="adicionarPaciente()"></input>
         </article>
         <article>
             <h3>Hospital Comum</h3>
