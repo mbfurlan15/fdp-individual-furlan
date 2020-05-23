@@ -16,9 +16,14 @@ class Paciente {
 
 
 function cadastrarHospital(){
-   //acessar as vagas
+   //acessar as vagas da tela
    let hosp1 = parseInt(document.getElementById("hosp1").value)
    let hosp2 = parseInt(document.getElementById("hosp2").value)
-   console.log(hosp1)
-   console.log(hosp2)
+
+   //instancia dois hospitais e preenche as vagas
+   let h1 = new Hospital(hosp1,0,"N",[])
+   let h2 = new Hospital(hosp2,0,"C",[])
+
+   console.log(h1)
+   console.log(h2)
 }
