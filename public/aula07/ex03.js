@@ -5,7 +5,16 @@ class BTUS{
         this.eletro=eletro;
     }
     calc(){
-        return (this.area*600+(this.pessoas-1)*600+this.eletro*600).toLocaleString('de-DE')
+
+        let p = 0
+
+       if (this.pessoas!=0) {
+        
+        p = (this.pessoas-1)*600
+        
+       }
+        
+        return (this.area*600+p+this.eletro*600).toLocaleString('de-DE')
     }}
 
 function calcular(){
