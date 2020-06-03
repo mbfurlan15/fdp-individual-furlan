@@ -5,6 +5,14 @@ class Hospital {
         this.tipo = tipo;
         this.pacientes = pacientes;
     }
+    adicionarPaciente(paciente){
+        this.pacientes.push(paciente)
+    }
+    calcularPorcentagemLotacao(){
+        let numVagas = this.vagas
+        let numPacientes = this.pacientes.length
+        return numPacientes*100/numVagas
+    }
 }
 
 class Paciente {
@@ -33,12 +41,14 @@ function adicionarPaciente(){
     let nome = document.getElementById("pac").value
     let sexo = document.querySelector("input[type=radio]:checked").value
     let p = new Paciente (nome, sexo)
-    if (h1.pacientes.length<0.7*h1.vagas){
-        h1.pacientes.push(p)
-    console.log("Cadastrado em h1")}
+    if (h1.calcularPorcentagemLotacao()<70){
+        h1.adicionarPaciente(p)
+    console.log("Cadastrado em h1")
+    listaHosp1.innerHTML += `<div>${p.nome} | ${p.sexo}</div>`}
         else{
-            h2.pacientes.push(p)
+            h2.adicionarPaciente(p)
             console.log("Cadastrado em h2")
+            listaHosp2.innerHTML += `<div>${p.nome} | ${p.sexo}</div>`
         }
     
 }
